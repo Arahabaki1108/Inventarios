@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="380.0" prefWidth="520.0" style="-fx-background-color: #7186FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logincontrol">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #0F218D;">
+         <children>
+            <Label layoutX="92.0" layoutY="27.0" text="Inicio de sesión" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logoImageView" fitHeight="70.0" fitWidth="70.0" layoutX="10.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="96.0" layoutY="123.0" text="Usuario" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usuarioTextField" layoutX="96.0" layoutY="150.0" opacity="0.5" prefHeight="10.0" prefWidth="330.0">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="96.0" layoutY="202.0" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="96.0" layoutY="225.0" opacity="0.5" prefHeight="25.0" prefWidth="330.0">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="ingresarBoton" layoutX="360.0" layoutY="292.0" mnemonicParsing="false" style="-fx-background-color: #A0DDFF;" text="Ingresar">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="registrarseBoton" layoutX="96.0" layoutY="292.0" mnemonicParsing="false" style="-fx-background-color: #7186FF;" text="Registrarse" underline="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
