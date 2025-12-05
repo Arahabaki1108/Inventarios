@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1280.0" style="-fx-background-color: #2C2C2C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arahabaki.inventarios.menuController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="1280.0" style="-fx-background-color: #6B0F1A;">
+         <children>
+            <Button fx:id="menuButton" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: #ffffff00;" textAlignment="CENTER" textFill="#ffffff00">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="WHITE" layoutX="127.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menú principal">
+               <font>
+                  <Font name="Times New Roman Bold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+        </AnchorPane>
+      <Button fx:id="resumenButton" layoutX="318.0" layoutY="451.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="484.0" style="-fx-background-color: #ffffff00; -fx-border-color: #F4F4F4;" text="Resumen" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Italic" size="44.0" />
+         </font></Button>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="842.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/inventario.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="finanzasButton" layoutX="318.0" layoutY="293.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="484.0" style="-fx-background-color: #ffffff00; -fx-border-color: #F4F4F4;" text="Finanzas" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Italic" size="44.0" />
+         </font></Button>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="842.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/money1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="inventariosButton" layoutX="318.0" layoutY="149.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="484.0" style="-fx-background-color: #ffffff00; -fx-border-color: #F4F4F4;" text="Inventarios" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Italic" size="44.0" />
+         </font></Button>
+      <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="842.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/resumen1.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

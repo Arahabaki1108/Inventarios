@@ -10,6 +10,7 @@ module com.arahabaki.inventarios {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.arahabaki.inventarios to javafx.fxml;
     exports com.arahabaki.inventarios;
