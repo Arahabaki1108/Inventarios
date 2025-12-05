@@ -12,7 +12,7 @@
     <children>
         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="1280.0" style="-fx-background-color: #6B0F1A;">
          <children>
-            <Button fx:id="menuButton" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: #ffffff00;" textAlignment="CENTER" textFill="#ffffff00">
+            <Button fx:id="opcionesButton" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: #ffffff00;" textAlignment="CENTER" textFill="#ffffff00">
                <graphic>
                   <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -46,7 +46,7 @@
             <Image url="@../../../../../../../../Downloads/money1.png" />
          </image>
       </ImageView>
-      <Button fx:id="inventariosButton" layoutX="318.0" layoutY="149.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="484.0" style="-fx-background-color: #ffffff00; -fx-border-color: #F4F4F4;" text="Inventarios" textFill="WHITE">
+      <Button fx:id="inventarioButton" layoutX="318.0" layoutY="149.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="484.0" style="-fx-background-color: #ffffff00; -fx-border-color: #F4F4F4;" text="Inventario" textFill="WHITE">
          <font>
             <Font name="Times New Roman Italic" size="44.0" />
          </font></Button>

@@ -11,6 +11,7 @@ module com.arahabaki.inventarios {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires mysql.connector.j;
 
     opens com.arahabaki.inventarios to javafx.fxml;
     exports com.arahabaki.inventarios;
