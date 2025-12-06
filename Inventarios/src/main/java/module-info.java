@@ -12,6 +12,7 @@ module com.arahabaki.inventarios {
     requires com.almasb.fxgl.all;
     requires java.sql;
     requires mysql.connector.j;
+    requires javafx.graphics;
 
     opens com.arahabaki.inventarios to javafx.fxml;
     exports com.arahabaki.inventarios;

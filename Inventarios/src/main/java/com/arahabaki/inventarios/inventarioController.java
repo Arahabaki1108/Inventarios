@@ -3,9 +3,13 @@ package com.arahabaki.inventarios;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -48,6 +52,7 @@ public class inventarioController {
 
         editarButton.setOnAction(event -> abrirEdicion());
     }
+
     private ObservableList<Producto> obtenerProductos(){
         ObservableList<Producto> lista = FXCollections.observableArrayList();
 
@@ -74,6 +79,28 @@ public class inventarioController {
         return lista;
     }
 
+    public void refrescarTabla() {
+        tablaInventario.setItems(obtenerProductos());
+    }
+
+
     private void abrirEdicion() {
+        Producto seleccionado = tablaInventario.getSelectionModel().getSelectedItem();
+
+        try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/arahabaki/inventarios/gestionarProducto.fxml"));
+            Scene scene = new Scene(loader.load());
+            Stage stage = new Stage();
+            stage.setTitle("Gestionar producto");
+            stage.setScene(scene);
+
+            gestionarProductoController controller = loader.getController();
+            controller.setProducto(seleccionado);
+            controller.setInventarioController(this);
+            stage.show();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
     }
 }

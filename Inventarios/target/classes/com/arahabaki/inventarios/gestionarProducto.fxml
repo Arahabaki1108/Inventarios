@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="650.0" prefWidth="1281.0" style="-fx-background-color: #2C2C2C; -fx-border-color: #DCE0D9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arahabaki.inventarios.gestionarProductoController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="1280.0" style="-fx-background-color: #6B0F1A;">
+            <children>
+                <Button fx:id="opcionesButton" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: #ffffff00;" textAlignment="CENTER" textFill="#ffffff00">
+                    <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Downloads/menu.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Text fill="WHITE" layoutX="127.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestionar Producto">
+                    <font>
+                        <Font name="Times New Roman Bold" size="26.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+      <Text fill="WHITE" layoutX="248.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="stockField" layoutX="721.0" layoutY="327.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #F4F4F4;">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="costoField" layoutX="721.0" layoutY="198.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #F4F4F4;">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="precioField" layoutX="248.0" layoutY="457.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #F4F4F4;">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="categoriaField" layoutX="248.0" layoutY="327.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #F4F4F4;">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="nombreField" layoutX="248.0" layoutY="198.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #F4F4F4;">
+         <font>
+            <Font name="Times New Roman" size="22.0" />
+         </font></TextField>
+        <AnchorPane layoutX="1.0" layoutY="578.0" prefHeight="72.0" prefWidth="1280.0">
+         <children>
+            <Button fx:id="guardarButton" layoutX="1072.0" layoutY="-5.0" mnemonicParsing="false" style="-fx-background-color: #C1CEFE;" text="Guardar" />
+            <Button fx:id="eliminarButton" layoutX="135.0" layoutY="-5.0" mnemonicParsing="false" style="-fx-background-color: #C1CEFE;" text="Eliminar" />
+         </children>
+        </AnchorPane>
+      <Text fill="WHITE" layoutX="248.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoría">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="248.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="721.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Costo">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="721.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

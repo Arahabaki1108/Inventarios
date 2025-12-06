@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -50,6 +51,8 @@ public class RegisterController {
             else{
                 System.out.print("No se registró el usuario");
             }
+            Stage stage = (Stage) registroButton.getScene().getWindow();
+            stage.close();
         }
         catch (SQLException e) {
             System.out.print("Error, no se registró el usuario");
